@@ -1,5 +1,7 @@
 import { fastify} from 'fastify'
-
+/* utilizando o type module no node é preciso 
+especificar a extensao .js do arquivo importado!! */
+import { DatabaseMemory } from './database-memory.js';
 const server = fastify();
 
 server.get('/', ()=>{
