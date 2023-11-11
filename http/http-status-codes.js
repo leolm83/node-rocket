@@ -1,4 +1,6 @@
-const HTTP_STATUS_CODES = {
+export const HTTP_STATUS_CODES = {
     CREATED : 201,
-    OK : 200
+    NO_CONTENT:204,
+    OK : 200,
+    BAD_REQUEST: 400
 }
