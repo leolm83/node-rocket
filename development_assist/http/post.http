@@ -1,0 +1,37 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+        "title": "JS crash course",
+        "description": "js basics",
+        "durationSeconds" : "30"
+}
+
+
+###
+// INVALID REQUEST
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+        "title": "JS crash course",
+        "description": "js basics"
+}
+
+###
+
+GET http://localhost:3333/videos
+###
+
+PUT http://localhost:3333/videos/74f07483-3de2-470d-816a-18f2683339d9
+Content-Type: application/json
+
+{
+        "title": "JS crash course",
+        "description": "js basics",
+        "durationSeconds" : "30",
+        "WTF": "123"
+}
+
+###
+DELETE http://localhost:3333/videos/74f07483-3de2-470d-816a-18f2683339d9
